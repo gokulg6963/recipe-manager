@@ -1,10 +1,10 @@
-# 🧾 Recipe Manager App
+#  Recipe Manager App
 
 A full-stack recipe management web app where users can sign up, log in, and manage their personal recipes — including uploading images, toggling "Tried" status, editing, and deleting recipes.
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - **Frontend**: ReactJS (with Bootstrap for styling)
 - **Backend**: Django REST Framework (DRF)
@@ -14,16 +14,16 @@ A full-stack recipe management web app where users can sign up, log in, and mana
 
 ## Features
 
-- 👤 User Authentication (Signup, Login, Logout)
-- 📝 Add/Edit/Delete Recipes
-- 📂 Upload Recipe Images
-- ✅ Mark Recipes as "Tried" or "To Try" (toggle)
-- 🔐 Token-based API access using DRF tokens
-- 📋 Clean UI with Bootstrap Cards
+-  User Authentication (Signup, Login, Logout)
+-  Add/Edit/Delete Recipes
+-  Upload Recipe Images
+-  Mark Recipes as "Tried" or "To Try" (toggle)
+-  Token-based API access using DRF tokens
+-  Clean UI with Bootstrap Cards
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 recipe-manager/
@@ -38,7 +38,7 @@ recipe-manager/
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 ### 1. Clone the Repo
 ```bash
@@ -59,7 +59,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-📌 Make sure to enable DRF token auth and `rest_framework.authtoken` in `settings.py`.
+ Make sure to enable DRF token auth and `rest_framework.authtoken` in `settings.py`.
 
 ---
 
@@ -75,7 +75,7 @@ This will open `http://localhost:3000` and proxy requests to Django at `http://l
 
 ---
 
-## 🔑 API Endpoints (via `/api/`)
+##  API Endpoints (via `/api/`)
 
 | Method | Endpoint                  | Description           |
 |--------|---------------------------|-----------------------|
@@ -89,7 +89,7 @@ This will open `http://localhost:3000` and proxy requests to Django at `http://l
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 
 Made with ❤️ by [Gokul G](https://www.linkedin.com/in/gokul-g50/)
 
