@@ -80,7 +80,7 @@ This will open `http://localhost:3000` and proxy requests to Django at `http://l
 | Method | Endpoint                  | Description           |
 |--------|---------------------------|-----------------------|
 | POST   | `/api/signup/`            | Register a new user  |
-| POST   | `/api/login/`             | Get token             |
+| POST   | `/api/login/`             | For Login            |
 | POST   | `/api/logout/`            | Logout                |
 | GET    | `/api/recipes/`           | List user recipes     |
 | POST   | `/api/recipes/create/`    | Create new recipe     |
