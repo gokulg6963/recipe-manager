@@ -19,12 +19,12 @@ function LoginForm({ setToken }) {
   };
 
   return (
-    <div>
+    <div className="card p-4 mb-3">
       <h2>Login</h2>
-      <input placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-      <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      <button onClick={handleLogin}>Login</button>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      <input className="form-control mb-2" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+      <input type="password" className="form-control mb-2" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <button className="btn btn-primary" onClick={handleLogin}>Login</button>
+      {error && <p className="text-danger mt-2">{error}</p>}
     </div>
   );
 }
