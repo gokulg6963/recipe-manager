@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import LoginForm from "./components/LoginForm";
+import RecipeForm from "./components/RecipeForm";
+import RecipeList from "./components/RecipeList";
+import axios from "axios";
+
+const API_BASE = "/api";
 
 function App() {
+  const [token, setToken] = useState(localStorage.getItem("token") || "");
+
+  const handleLogout = async () => {
+    await axios.post(`${API_BASE}/logout/`, {}, {
+      headers: { Authorization: `Token ${token}` },
+    });
+    setToken("");
+    localStorage.removeItem("token");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: "2rem", fontFamily: "sans-serif" }}>
+      <h1>Recipe Manager</h1>
+      {!token ? (
+        <LoginForm setToken={setToken} />
+      ) : (
+        <>
+          <button onClick={handleLogout}>Logout</button>
+          <RecipeForm token={token} />
+          <RecipeList token={token} />
+        </>
+      )}
     </div>
   );
 }
