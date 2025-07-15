@@ -91,10 +91,7 @@ This will open `http://localhost:3000` and proxy requests to Django at `http://l
 
 ##  Author
 
-Made with ❤️ by [Gokul G](https://www.linkedin.com/in/gokul-g50/)
+Made by [Gokul G](https://www.linkedin.com/in/gokul-g50/)
 
 ---
 
-## 📝 License
-
-This project is for educational and demo purposes.
